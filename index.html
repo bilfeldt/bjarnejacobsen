@@ -46,8 +46,6 @@
     </head>
     <body
         class="flex h-full bg-zinc-50 dark:bg-black"
-        data-new-gr-c-s-check-loaded="14.1216.0"
-        data-gr-ext-installed=""
     >
         <script type="application/ld+json">
             {
@@ -139,16 +137,14 @@
                                             <div
                                                 class="flex flex-1 justify-end md:justify-center"
                                             >
+                                                <input type="checkbox" id="menu-toggle" class="peer/menu hidden fixed h-0 w-0 top-0" />
                                                 <div
                                                     class="pointer-events-auto md:hidden"
-                                                    data-headlessui-state=""
                                                 >
-                                                    <button
+                                                    <label for="menu-toggle" class="relative"><div
                                                         class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20"
-                                                        type="button"
+                                                        role="button"
                                                         aria-expanded="false"
-                                                        data-headlessui-state=""
-                                                        id="headlessui-popover-button-:Rbmiqja:"
                                                     >
                                                         Menu
                                                         <svg
@@ -164,60 +160,56 @@
                                                                 stroke-linejoin="round"
                                                             ></path>
                                                         </svg>
-                                                    </button>
+                                                    </div></label>
                                                 </div>
-                                                <div
-                                                    hidden=""
-                                                    style="
-                                                        position: fixed;
-                                                        top: 1px;
-                                                        left: 1px;
-                                                        width: 1px;
-                                                        height: 0;
-                                                        padding: 0;
-                                                        margin: -1px;
-                                                        overflow: hidden;
-                                                        clip: rect(0, 0, 0, 0);
-                                                        white-space: nowrap;
-                                                        border-width: 0;
-                                                        display: none;
-                                                    "
-                                                ></div>
+                                                <label role="backdrop" aria-hidden="true" for="menu-toggle" class="transition-all ease-in pointer-events-auto backdrop-blur peer-checked/menu:fixed inset-0 z-40 dark:bg-black/70"><span></span></label>
                                                 <nav
-                                                    class="pointer-events-auto hidden md:block"
+                                                    class="inset-x-4 pointer-events-auto peer/menu:transition-all peer/menu:ease-in peer-checked/menu:block hidden md:block z-40 peer-checked/menu:fixed peer-checked/menu:ring-1 peer-checked/menu:ring-zinc-900/5"
                                                 >
+                                                <label for="menu-toggle">
                                                     <ul
-                                                        class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+                                                        class="p-8 md:py-0 divide-y dark:divide-gray-700 md:divide-y-0 z-50 md:flex rounded-3xl md:rounded-full bg-white md:px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10"
                                                     >
-                                                        <li>
+                                                        <li class="md:hidden pb-6">
+                                                            <div class="flex">
+                                                            <span class="flex-1 text-sm font-medium text-zinc-600 dark:text-zinc-400">Navigation</span>
+                                                            <label id="menu-close" for="menu-toggle" aria-label="Close menu" class="cursor-pointer"><svg viewBox="0 0 24 24" aria-hidden="true" class="h-6 w-6 text-zinc-500 dark:text-zinc-400"><path d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></label>
+                                                            </div>
+                                                        </li>
+                                                        <li class="!border-t-0">
                                                             <a
-                                                                class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                                onclick="(() => document.getElementById('menu-toggle').checked = false)()"
+                                                                class="relative block md:px-3 py-4 md:py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                                 href="#praktisk"
                                                                 >Praktisk</a
                                                             >
                                                         </li>
                                                         <li>
                                                             <a
-                                                                class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                                onclick="(() => document.getElementById('menu-toggle').checked = false)()"
+                                                                class="relative block md:px-3 py-4 md:py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                                 href="#om-mig"
                                                                 >Om&nbsp;mig</a
                                                             >
                                                         </li>
                                                         <li>
                                                             <a
-                                                                class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                                onclick="(() => document.getElementById('menu-toggle').checked = false)()"
+                                                                class="relative block md:px-3 py-4 md:py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                                 href="#foredrag"
                                                                 >Foredrag</a
                                                             >
                                                         </li>
                                                         <li>
                                                             <a
-                                                                class="relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+                                                                onclick="(() => document.getElementById('menu-toggle').checked = false)()"
+                                                                class="relative block md:px-3 py-4 md:py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
                                                                 href="#litteratur"
                                                                 >Litteratur</a
                                                             >
                                                         </li>
                                                     </ul>
+                                                </label>
                                                 </nav>
                                             </div>
                                             <div
@@ -238,7 +230,7 @@
                                                             stroke-linecap="round"
                                                             stroke-linejoin="round"
                                                             aria-hidden="true"
-                                                            class="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600"
+                                                            class="size-5 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600"
                                                         >
                                                             <path
                                                                 d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z"
@@ -251,7 +243,7 @@
                                                         <svg
                                                             viewBox="0 0 24 24"
                                                             aria-hidden="true"
-                                                            class="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
+                                                            class="hidden size-5 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500"
                                                         >
                                                             <path
                                                                 d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
